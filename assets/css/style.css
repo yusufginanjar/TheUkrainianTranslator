@@ -15,25 +15,61 @@ h1,h2,h3,h4,h5,h6,p{
     color: #707070;
 }
 
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size: 40px;
+}
+
 h6{
     font-size: 26px;
+    margin-bottom: 0;
+}
+
+p{
+    font-size: 29px;
+    margin-bottom: 5px;
 }
 
 ul{
     margin-left:-40px;
+    list-style-type: none;
+}
+
+.btn-link{
+    font-size: 29px;
+    margin-left: -13px;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .container{
     max-width: 85vw;
 }
 
+section{
+    margin-top: 10px;
+    padding: 50px 0 10px 0;
+}
+
+section .section-title{
+    margin-bottom: 25px;
+}
+
 /* Jumbotron */
 
 .jumbotron{
     background: url(../img/background-mobile.png);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position-x: 80px;
+    background-position-x: 284px;
+    background-position-y: -24px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .contact{
@@ -58,30 +94,50 @@ ul{
     line-height: 40px;
 }
 
+.jumbotron .head{
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+}
 
-.jumbotron h3{
+.jumbotron .head .laptop{
+    width:0;
+}
+
+
+.jumbotron h2{
     color: #0F75BC;
+    
 }
 
 .jumbotron h1{
     color: #303030;
 }
 
-.jumbotron .headline a:hover, .jumbotron .headline p span {
-    visibility: visible;
+.jumbotron .less{
+    margin-top: -5px;
+    margin-left: 4px;
 }
 
-.jumbotron .headline p span {
-    visibility: hidden;
+.jumbotron .collapse-div{
+    max-height: 180px;
+    overflow: hidden;
 }
+
+.jumbotron .logo-hexagon{
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    margin-top: 50px;
+}
+
 
 .jumbotron .logo{
     margin-top: 50px;
 }
 
-.jumbotron .logo-hexagon{
-    display: flex;
-}
 
 .jumbotron .logo img{
     width: 240px;
@@ -103,11 +159,15 @@ ul{
 }
 
 .jumbotron .hexagon ul{
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;
-    justify-content: space-between;
     
+    justify-content: space-between;
     list-style-type: none;
     margin-bottom: 0;
+    margin-top: 6px;
 }
 
 .jumbotron .hexagon-list{
@@ -137,4 +197,233 @@ ul{
 
 .jumbotron .hexagon-list .hexagon-text small{
     font-size: 18px;
+}
+
+
+/* Our Services */
+.services h2{
+    font-size: 48px;
+}
+
+.services h3{
+    font-size: 39px;
+}
+
+.services .card{
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.16);
+    box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.16);
+    border: solid 1px rgba(244, 118, 80, 0.44);
+    margin-bottom: 30px;
+}
+
+
+.services .card-title{
+    display: flex;
+}
+
+.services .card-title img{
+    width: 100px;
+    max-height: 70px;
+    margin-right: 24px;
+}
+
+.services .card-title h3{
+    line-height: 50px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.services .card-text{
+    margin-top: 30px;
+}
+
+/* Working Area */
+.working{
+    background: rgba(239, 246, 251, 1);
+    
+}
+
+.working .working-content{
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    -webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.working-content li{
+    position: relative;
+    margin-right: 7px;
+}
+
+.working-content li .btn{
+    display: inline;
+    padding: 0;
+}
+
+
+
+.working .card{
+    position: relative;
+    width: 260px;
+    min-height: 373px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    -webkit-box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.16);
+    box-shadow: 3px 5px 6px 0px rgba(0,0,0,0.16);
+    border: solid 1px rgba(244, 118, 80, 0.44);
+}
+
+.working .card-body{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.working .card-body h3{
+    font-size: 29px;
+}
+
+.working .card-body img{
+    margin-top: 32px;
+    height: 109px;
+    width: 100px;
+}
+
+
+.working-content span .card-body{
+    margin: 0;
+    padding: 20px 15px;
+}
+
+.working-content span .card p{
+    color: white;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+
+.working-content li span{
+    position: absolute;
+    top: 0;
+    opacity: 0; 
+    transition: 0.3s;
+}
+
+.working-content span .card{
+    background: rgba(11, 80, 128, 1);
+}
+
+.working-content li a:hover span{
+    opacity: 1;
+}
+
+
+/* Recent Projects */
+.projects{
+    padding-top: 30px;
+}
+
+
+.projects ul li{
+    display: inline-block;
+    display: -webkit-inline-box;
+    text-align: left;
+}
+
+.projects ul li p{
+    margin-left: 10px;
+    font-size: 29px;
+    line-height: 31px;
+    
+}
+
+.projects ul li:before{
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/lemon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    margin-left: -10px;
+    position: relative;
+    top: 5px;
+    
+}
+
+
+/* footer */
+footer{
+    background: #333;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p{
+    font-size: 23px;
+    color: #fff;
+}
+
+
+/* Madia Query */
+@media only screen and (min-width: 768px) {
+    /* general */
+    h1{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    h6{
+        font-size: 23px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .jumbotron{
+        background: url(../img/background.png);
+        background-size: cover;
+    }
+
+    .contact{
+        min-height: 51px;
+        padding: 12px 20px
+    }
+
+    .contact h6{
+        line-height: 27px;
+    }
+
+    .contact img{
+        height: 25px;
+        width: 25px;
+        
+    }
+
+    .jumbotron .headline{
+        max-width: 52vw;
+    }
+
+    .jumbotron .laptop{
+        width: 200px;
+        background: url(../img/Laptop.png);
+        height: 200px;
+    }
+
 }
