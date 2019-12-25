@@ -101,6 +101,10 @@ section .section-title{
     display: flex;
 }
 
+.jumbotron .headline{
+    max-width: 100vw;
+}
+
 .jumbotron .head .laptop{
     width:0;
 }
@@ -379,7 +383,7 @@ footer p{
 
 /* Madia Query */
 @media (min-width: 768px) {
-    /* general */
+   
     h1{
         font-size: 50px;
     }
@@ -426,4 +430,4 @@ footer p{
         height: 200px;
     }
 
-}
+} 
