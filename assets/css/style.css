@@ -503,7 +503,7 @@ footer p{
         -moz-box-shadow: 22px 25px 24px 0px rgba160,118,189. 0.26);
         box-shadow: 22px 25px 24px 0px rgba160,118,189, 0.26);
         text-align: center;
-        min-height: 420px;
+        min-height: 455px;
         max-width: 320px;
     }
 
@@ -529,6 +529,10 @@ footer p{
         min-height: 280px;
     }
 
+    .working .card-body {
+        margin-top: 40px;
+    }
+
     .working .card-body h3{
         font-size: 23px;
     }
@@ -549,6 +553,10 @@ footer p{
         display: flex;
     }
 
+    .projects ul li p{
+        font-size: 21px;
+    }
+
 
 
 } 
@@ -562,6 +570,10 @@ footer p{
 
     .jumbotron .hexagon{
         width: 670px;
+    }
+
+    .services .card{
+        min-height: 425px;
     }
 
     .working-content li{
