@@ -262,21 +262,10 @@ section .section-title{
     
 }
 
-.working .working-content{
-    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;
-    -webkit-flex: 1 1 auto;
-	flex: 1 1 auto;
-    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
+
 
 .working-content li{
     position: relative;
-    margin-right: 7px;
 }
 
 .working-content li .btn{
@@ -321,11 +310,7 @@ section .section-title{
     padding: 20px 15px;
 }
 
-.working-content span .card p{
-    color: white;
-    text-align: left;
-    margin-bottom: 0;
-}
+
 
 
 .working-content li span{
@@ -337,6 +322,21 @@ section .section-title{
 
 .working-content span .card{
     background: rgba(11, 80, 128, 1);
+    display: table;
+}
+
+.working-content span .card .card-body{
+   
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.working-content span .card p{
+    color: white;
+    text-align: left;
+    margin-bottom: 0;
+    
 }
 
 .working-content li a:hover span{
@@ -516,10 +516,10 @@ footer p{
         margin-top: 28px;
     }
 
-    .working .working-content{
+    /* .working .working-content{
         justify-content: space-between;
     }
-    
+     */
     .working-content li{
         margin: 0 0;
     }
@@ -576,7 +576,4 @@ footer p{
         min-height: 425px;
     }
 
-    .working-content li{
-        margin: 0 20px;
-    }
 }
