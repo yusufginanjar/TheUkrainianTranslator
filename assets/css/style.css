@@ -127,10 +127,6 @@ section .section-title{
     margin-left: 4px;
 }
 
-.jumbotron .collapse-div{
-    max-height: 180px;
-    overflow: hidden;
-}
 
 .jumbotron .logo-hexagon{
     display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -442,12 +438,7 @@ footer p{
         
     }
 
-    .jumbotron .collapse-div{
-        max-height: 112px;
-        overflow: hidden;
-    }
-
-   
+    
 
     .jumbotron .head .laptop{
         height: 0;
@@ -563,10 +554,7 @@ footer p{
 
 
 @media (min-width: 1054px) {
-    .jumbotron .collapse-div{
-        max-height: 96px;
-        overflow: hidden;
-    }
+    
 
     .jumbotron .hexagon{
         width: 670px;
