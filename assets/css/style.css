@@ -315,6 +315,7 @@ section .section-title{
 .working-content li span{
     position: absolute;
     top: 0;
+    bottom: 0;
     opacity: 0; 
     transition: 0.3s;
 }
@@ -322,6 +323,7 @@ section .section-title{
 .working-content span .card{
     background: rgba(11, 80, 128, 1);
     display: table;
+    height: 100%;
 }
 
 .working-content span .card .card-body{
