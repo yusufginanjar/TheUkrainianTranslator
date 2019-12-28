@@ -306,7 +306,10 @@ section .section-title{
     padding: 20px 15px;
 }
 
-
+.working .row{
+    margin-right: 0;
+    margin-left : -40px;
+}
 
 
 .working-content li span{
